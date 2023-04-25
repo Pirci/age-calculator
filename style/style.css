@@ -1,0 +1,180 @@
+:root{
+    /* Primary */
+
+--Purple: hsl(259, 100%, 65%);
+--Light-red: hsl(0, 100%, 67%);
+
+/* Neutral */
+
+--White: hsl(0, 0%, 100%);
+--Off-white: hsl(0, 0%, 94%);
+--Light-grey: hsl(0, 0%, 86%);
+--Smokey-grey: hsl(0, 1%, 44%);
+--Off-black: hsl(0, 0%, 8%);
+}
+
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--Off-white);
+    font-family: 'Poppins', sans-serif;
+
+}
+main{
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    padding: 45px;
+    max-width: 520px;
+    max-height: 400px;
+    border-radius: 20px 20px 160px 20px;
+    margin: 30px 0 30px;
+}
+.input{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    min-width: 450px;
+}
+
+label{
+    font-size: 8px;
+    letter-spacing: 4px;
+    color: var(--Smokey-grey);
+}
+input[type=text]{
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 0 10px 13px;
+    margin-top: 5px;
+    width: 100px;
+    display: block;
+    font-size: 22px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: black;
+    caret-color: var(--Purple);
+}
+::placeholder{
+    color: var(--Smokey-grey);
+}
+input[type=text]:hover{
+    border-color: var(--Purple);
+
+}
+input[type=text]:focus{
+    outline: none;
+    border-color: var(--Purple);
+}
+.mid{
+    height: 30px;
+    padding-top: 30px;
+    display: flex;
+
+}
+.left{
+    background-color: var(--Light-grey); text-align: left;
+    width: 100%;
+    height: 1px;
+
+}
+.right{
+    margin-top: -30px;
+
+}
+
+hr{
+    margin: 30px 0;
+    border-color: var(--Off-white);
+}
+
+#rounded-button {
+    width: 60px;
+    height: 60px;
+    background: var(--Purple);
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    text-decoration: none;
+}
+
+#rounded-button:hover {
+    background: black;
+}
+.age{
+    height: 200px;
+}
+.num{
+    font-weight: 800;
+    font-style: italic;
+    color: var(--Purple);
+}
+p{
+    margin: 0;
+    font-size: 45px;
+    font-weight: 700;
+    font-style: italic;
+    color: black;
+}
+
+.input-control.success input {
+    border-color: none;
+}
+.input-control.error label {
+    color: #ff3860;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+    margin-top: 4px;
+    font-style: italic;
+
+}
+@media screen and (max-width: 375px) {
+    main{
+        max-width: 250px;
+        max-height: 460px;
+        border-radius: 20px 20px 100px 20px;
+    }
+    .input-control{
+        max-width: 100px;
+    }
+    input[type=text]{
+        max-width: 60px;
+        font-size: 16px;
+    }
+    .input{
+        align-items: center;
+    }
+
+    .mid{
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0 20px 0;
+
+    }
+    .right{
+        margin: -30px;
+    }
+
+
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
