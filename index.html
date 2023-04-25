@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style/style.css">
   
   <title>Frontend Mentor | Age calculator app</title>
 
@@ -15,23 +16,50 @@
   </style>
 </head>
 <body>
+  <main>
+    <form id="form" action="/">
+      <div class="input">
+        <div class="input-control">
+          <label id="inputDay">DAY</label>
+          <input id = "dd" type="text" name="day" placeholder="DD">
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label id="inputMonth">MONTH</label>
+          <input id="mm" type="text" name="month" placeholder="MM">
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label id="inputYear">YEAR</label>
+          <input id="yyyy" type="text" name="year" placeholder="YYYY">
+          <div class="error"></div>
+        </div>
+      </div>
+      <div class="mid">
+        <div class = "left">
 
-  Day
-  DD
+        </div>
 
-  Month
-  MM
+        <div class="right">
+          <div class="svgButton">
+            <button id="rounded-button" type="submit" aria-label="button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="35.3" height="35" viewBox="0 0 46 44" class="sxg"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="age">
+        <p><span id="age-day" class="num">--</span> days</p>
+        <p><span id="age-month" class="num">--</span> months</p>
+        <p><span id="age-year" class="num">--</span> years</p>
+      </div>
+    </form> 
+  </main>
 
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
-  
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">Satyapriya Mahato</a>.
+  </footer>
+  <script src="./app/script.js"></script>
 </body>
 </html>
